@@ -1,0 +1,87 @@
+* {
+    margin: 5px 10px;
+    padding: 0px; 
+}
+
+title {
+    background-color: darkblue;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    color: rgb(220, 220, 220);
+    font-family: 'Spectral', serif;
+    font-size: x-large;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav {
+    background: rgb(100, 100, 100);
+    font-family: 'Titillium Web', sans-serif;
+    align-items: flex-start;
+    margin: fill;
+    padding: 5px;
+    border-radius: 10px;
+    size: fixed;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: fill;
+    padding: 0;
+    position: relative;
+    align-items: center;
+}
+
+nav li:first-child {
+    justify-content: left;
+    align-items: left;
+    margin-right: 100px;
+}
+
+nav a {
+    color: aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a::-webkit-scrollbar-track-piece {
+    color: blueviolet;
+}
+
+nav a:hover {
+    color: wheat;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    background-color: wheat;
+    bottom: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
